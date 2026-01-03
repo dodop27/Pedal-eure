@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pédal'Eure | Réparation & entretien vélo</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo.png">
   <meta name="description" content="Pédal'Eure : réparation, entretien et révision de vélos à Bourneville. Forfaits et prestations à la carte." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -90,6 +91,38 @@
           <div class="portrait">
             <img src="assets/img/martin.jpg" alt="Portrait du mécanicien vélo" class="portrait__img" />
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Infos + map + horaires -->
+    <section id="infos" class="section">
+      <div class="container infos">
+        <div class="map">
+          <iframe
+            title="Carte Pédal'Eure"
+            src="https://www.google.com/maps?q=143%20Route%20de%20Quillebeuf%20Bourneville%2027500&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="info-card">
+          <h3>Adresse & horaires</h3>
+          <p class="addr">📍 143 Route de Quillebeuf, Bourneville 27500</p>
+
+          <div class="hours">
+            <div class="hours__row"><span>Lundi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
+            <div class="hours__row"><span>Mardi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
+            <div class="hours__row"><span>Mercredi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
+            <div class="hours__row"><span>Jeudi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
+            <div class="hours__row"><span>Vendredi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
+            <div class="hours__row"><span>Samedi</span><strong>9h - 12h</strong></div>
+          </div>
+
+          <p class="note">
+            * Horaires indicatifs : Contactez-moi pour confirmer un rendez-vous.
+          </p>
         </div>
       </div>
     </section>
@@ -193,7 +226,7 @@
 
           <div class="panel__cta">
             <a id="contact" class="btn btn--primary btn--wide" href="mailto:dorian.peltier@hotmail.fr?subject=Demande%20de%20devis%20-%20P%C3%A9dal%27Eure">
-              Une demande spécifique ? Clique ici pour me contacter
+              Une demande spécifique ? Cliquez ici pour me contacter
             </a>
             <p class="hint">Ou par téléphone / WhatsApp</p>
             <div class="contact-extras">
@@ -211,47 +244,16 @@
         </div>
       </div>
     </section>
-
-    <!-- Section: Infos + map + horaires -->
-    <section id="infos" class="section">
-      <div class="container infos">
-        <div class="map">
-          <!-- Option A: Google Maps embed (remplace l'URL par la tienne) -->
-          <iframe
-            title="Carte Pédal'Eure"
-            src="https://www.google.com/maps?q=143%20Route%20de%20Quillebeuf%20Bourneville%2027500&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-
-        <div class="info-card">
-          <h3>Adresse & horaires</h3>
-          <p class="addr">📍 143 Route de Quillebeuf, Bourneville 27500</p>
-
-          <div class="hours">
-            <div class="hours__row"><span>Lundi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
-            <div class="hours__row"><span>Mardi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
-            <div class="hours__row"><span>Mercredi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
-            <div class="hours__row"><span>Jeudi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
-            <div class="hours__row"><span>Vendredi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
-            <div class="hours__row"><span>Samedi</span><strong>9h - 12h</strong></div>
-          </div>
-
-          <p class="note">
-            * Horaires indicatifs : Contacte-moi pour confirmer un rendez-vous.
-          </p>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer__inner">
+      <!--
       <div class="footer__left">
         <img src="assets/img/logo.png" alt="Logo Pédal'Eure" class="footer__logo" />
       </div>
+      -->
 
       <div class="footer__actions" aria-label="Raccourcis contact">
         <!-- Remplace par tes vrais liens -->
@@ -287,3 +289,10 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+<!--
+git status
+git add .
+git commit -m "Mise à jour du site"
+git push
+-->
