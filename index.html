@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pédal'Eure | Réparation & entretien vélo</title>
+  <meta name="description" content="Pédal'Eure : réparation, entretien et révision de vélos à Bourneville. Forfaits et prestations à la carte." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+    <header class="topbar">
+    <!-- logo aligné à gauche -->
+    <a href="#top" class="brand__logo-link" aria-hidden="true">
+        <img src="assets/img/logo.png" alt="Logo Pédal'Eure" class="brand__logo" />
+    </a>
+
+    <!-- nom centré -->
+    <a class="brand" href="#top" aria-label="Retour en haut">
+        <span class="brand__name">Pédal'Eure</span>
+    </a>
+
+    <nav class="topbar__nav" aria-label="Navigation principale">
+      <button id="contactBtn" class="btn btn--primary" type="button" aria-haspopup="true" aria-expanded="false">
+        Contact
+      </button>
+
+      <!-- Popover contact (bulle) -->
+      <div id="contactPopover" class="contact-popover" role="dialog" aria-label="Contact rapide" aria-hidden="true">
+        <div class="contact-popover__inner">
+          <a class="contact-popover__item" href="mailto:dorian.peltier@hotmail.fr" aria-label="Envoyer un email">
+            <img src="assets/img/icons/mail.png" alt="" />
+            <span>Email</span>
+          </a>
+          <a class="contact-popover__item" href="tel:0789303017" aria-label="Appeler le 07 89 30 30 17">
+            <img src="assets/img/icons/phone.png" alt="" />
+            <span>Téléphone</span>
+          </a>
+          <a class="contact-popover__item" href="https://wa.me/33789303017" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+            <img src="assets/img/icons/whatsapp.png" alt="" />
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+    </header>
+
+  <main id="top">
+    <!-- Section: Qui suis-je -->
+    <section class="section section--hero">
+      <div class="container hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Qui suis-je ?</h1>
+
+          <div class="hero__text">
+            <p>
+              Après plusieurs années d’expérience au sein de différents magasins de cycles normands,
+              j’ai choisi de transformer ma passion en métier en obtenant mon CAP Mécanique Vélo.
+            </p>
+            <p>
+              Aujourd’hui, je mets mes compétences au service des cyclistes à travers <strong>Pédal’Eure</strong>,
+              une entreprise dédiée à la réparation et à l’entretien de vélos.
+            </p>
+            <p>
+              Mon objectif est simple : vous offrir un <strong>service de qualité</strong>, personnalisé
+              et à l’écoute de vos besoins.
+            </p>
+            <p>
+              Parce que la <strong>satisfaction client</strong> est ma priorité, l’amour du vélo ma motivation,
+              et la passion de la mécanique l’essence même de mon travail, je m’engage à prendre soin de chaque vélo
+              comme s’il était le mien.
+            </p>
+            <p>
+              Au plaisir de partager un bout de route avec vous, dans ce magnifique sport qu’est le cyclisme.
+            </p>
+
+            <p class="signature--sacramento">Martin Chedot</p>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="portrait">
+            <img src="assets/img/martin.jpg" alt="Portrait du mécanicien vélo" class="portrait__img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Forfaits -->
+    <section id="forfaits" class="section">
+      <div class="container">
+        <h2 class="section__title">Choisissez le forfait qui vous convient</h2>
+
+        <p class="forfaits__note">Les tarifs indiqués correspondent au prix de la main‑d'œuvre.</p>
+
+        <div class="cards">
+          <article class="card">
+            <h3 class="card__title">Forfait Standard</h3>
+            <p class="card__price">30€</p>
+            <ul class="checklist">
+              <li>Réglage transmission</li>
+              <li>Freins</li>
+              <li>Contrôle des serrages</li>
+              <li>Vérification de la transmission</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Forfait Tranquillité</h3>
+            <p class="card__price">90€</p>
+            <ul class="checklist">
+              <li>Réglage transmission</li>
+              <li>Freins</li>
+              <li>Contrôle des serrages</li>
+              <li>Vérification de la transmission</li>
+              <li>Dévoilage des roues</li>
+              <li>Nettoyage + graissage jeu de direction et boîtier de pédalier</li>
+              <li>Changement transmission (suivant usure)</li>
+              <li>Changement des éléments de sécurité (suivant usure)</li>
+              <li>Lavage du vélo</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Forfait Premium</h3>
+            <p class="card__price">190€</p>
+            <ul class="checklist">
+              <li>Démontage du vélo complet</li>
+              <li>Changement des pièces d’usure</li>
+              <li>Remontage</li>
+              <li>Nettoyage complet</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Forfait VAE</h3>
+            <p class="card__price">100€</p>
+            <ul class="checklist">
+              <li>Révision complète (forfait tranquillité)</li>
+              <li>Mise à jour</li>
+              <li>Vérification du bon fonctionnement moteur</li>
+              <li>Batterie</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: A la carte -->
+    <section id="carte" class="section section--soft">
+      <div class="container">
+        <div class="panel">
+          <h2 class="panel__title">À la carte</h2>
+
+          <div class="grid-2">
+            <div>
+              <h3 class="subttl">Transmission</h3>
+              <ul class="pricelist">
+                <li><span>Réglages dérailleurs</span><strong>15€</strong></li>
+                <li><span>Remplacement dérailleur</span><strong>20€</strong></li>
+                <li><span>Remplacement chaîne</span><strong>18€</strong></li>
+                <li><span>Remplacement cassette</span><strong>15€</strong></li>
+                <li><span>Remplacement plateau</span><strong>25€</strong></li>
+                <li><span>Câbleries complète externe (câbles + gaines + réglages)</span><strong>40€</strong></li>
+                <li><span>Câbleries complète interne (câbles + gaines + réglages)</span><strong>50€</strong></li>
+                <li><span>Mise à jour di2 ou axs</span><strong>15€</strong></li>
+                <li><span>Remplacement boîtier pédalier</span><strong>25€</strong></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="subttl">Freinage</h3>
+              <ul class="pricelist">
+                <li><span>Réglages freins</span><strong>15€</strong></li>
+                <li><span>Remplacement plaquettes (1 frein) + réglages</span><strong>15€</strong></li>
+                <li><span>Remplacement disque (à l'unité)</span><strong>12€</strong></li>
+                <li><span>Purge frein (à l'unité)</span><strong>25€</strong></li>
+                <li><span>Montage frein (à l'unité)</span><strong>30€</strong></li>
+                <li><span>Remplacement patin de frein (à l'unité)</span><strong>15€</strong></li>
+                <li><span>Câbleries complète externe (câbles + gaines + réglages)</span><strong>40€</strong></li>
+                <li><span>Câbleries complète interne (câbles + gaines + réglages)</span><strong>50€</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="panel__cta">
+            <a id="contact" class="btn btn--primary btn--wide" href="mailto:dorian.peltier@hotmail.fr?subject=Demande%20de%20devis%20-%20P%C3%A9dal%27Eure">
+              Une demande spécifique ? Clique ici pour me contacter
+            </a>
+            <p class="hint">Ou par téléphone / WhatsApp</p>
+            <div class="contact-extras">
+                <div class="contact-extras__apps" role="group" aria-label="Téléphone et WhatsApp">
+                    <a class="iconbtn iconbtn--phone" href="tel:0789303017" aria-label="Appeler le 0789303017">
+                    <img src="assets/img/icons/phone.png" alt="Téléphone" />
+                    </a>
+
+                    <a class="iconbtn iconbtn--wa" href="https://wa.me/33789303017" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+                    <img src="assets/img/icons/whatsapp.png" alt="WhatsApp" />
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Infos + map + horaires -->
+    <section id="infos" class="section">
+      <div class="container infos">
+        <div class="map">
+          <!-- Option A: Google Maps embed (remplace l'URL par la tienne) -->
+          <iframe
+            title="Carte Pédal'Eure"
+            src="https://www.google.com/maps?q=143%20Route%20de%20Quillebeuf%20Bourneville%2027500&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="info-card">
+          <h3>Adresse & horaires</h3>
+          <p class="addr">📍 143 Route de Quillebeuf, Bourneville 27500</p>
+
+          <div class="hours">
+            <div class="hours__row"><span>Lundi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
+            <div class="hours__row"><span>Mardi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
+            <div class="hours__row"><span>Mercredi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
+            <div class="hours__row"><span>Jeudi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
+            <div class="hours__row"><span>Vendredi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
+            <div class="hours__row"><span>Samedi</span><strong>9h - 12h</strong></div>
+          </div>
+
+          <p class="note">
+            * Horaires indicatifs : Contacte-moi pour confirmer un rendez-vous.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <img src="assets/img/logo.png" alt="Logo Pédal'Eure" class="footer__logo" />
+      </div>
+
+      <div class="footer__actions" aria-label="Raccourcis contact">
+        <!-- Remplace par tes vrais liens -->
+        <a class="iconbtn" href="tel:+33789303017" aria-label="Téléphone">
+          <img src="assets/img/icons/phone.png" alt="Téléphone">
+        </a>
+        <a class="iconbtn" href="https://wa.me/33789303017" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <img src="assets/img/icons/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a class="iconbtn" href="mailto:dorian.peltier@hotmail.fr" aria-label="Email">
+          <img src="assets/img/icons/mail.png" alt="Email">
+        </a>
+        <a class="iconbtn" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+          <img src="assets/img/icons/instagram.png" alt="Instagram">
+        </a>
+        <a class="iconbtn" href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+          <img src="assets/img/icons/facebook.png" alt="Facebook">
+        </a>
+      </div>
+
+    <div class="footer__links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+    </div>
+
+
+    <div class="footer__bottom">
+      <small>© <span id="year"></span> Pédal’Eure — Tous droits réservés</small>
+    </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
