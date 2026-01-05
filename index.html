@@ -33,15 +33,15 @@
       <!-- Popover contact (bulle) -->
       <div id="contactPopover" class="contact-popover" role="dialog" aria-label="Contact rapide" aria-hidden="true">
         <div class="contact-popover__inner">
-          <a class="contact-popover__item" href="mailto:dorian.peltier@hotmail.fr" aria-label="Envoyer un email">
+          <a class="contact-popover__item" href="mailto:pedaleure.atelier@gmail.fr" aria-label="Envoyer un email">
             <img src="assets/img/icons/mail.png" alt="" />
             <span>Email</span>
           </a>
-          <a class="contact-popover__item" href="tel:0789303017" aria-label="Appeler le 07 89 30 30 17">
+          <a class="contact-popover__item" href="tel:0610266727" aria-label="Appeler le 06 10 26 67 27">
             <img src="assets/img/icons/phone.png" alt="" />
             <span>Téléphone</span>
           </a>
-          <a class="contact-popover__item" href="https://wa.me/33789303017" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+          <a class="contact-popover__item" href="https://wa.me/33610266727" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
             <img src="assets/img/icons/whatsapp.png" alt="" />
             <span>WhatsApp</span>
           </a>
@@ -101,7 +101,7 @@
         <div class="map">
           <iframe
             title="Carte Pédal'Eure"
-            src="https://www.google.com/maps?q=143%20Route%20de%20Quillebeuf%20Bourneville%2027500&output=embed"
+            src="https://www.google.com/maps?output=embed&ll=49.3975,0.6166&z=13"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
@@ -109,7 +109,7 @@
 
         <div class="info-card">
           <h3>Adresse & horaires</h3>
-          <p class="addr">📍 143 Route de Quillebeuf, Bourneville 27500</p>
+          <p class="addr">📍 <!--143 Route de Quillebeuf,-->Bourneville-Sainte-Croix 27500</p>
 
           <div class="hours">
             <div class="hours__row"><span>Lundi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
@@ -117,7 +117,7 @@
             <div class="hours__row"><span>Mercredi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
             <div class="hours__row"><span>Jeudi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
             <div class="hours__row"><span>Vendredi</span><strong>9h - 12h</strong><strong>13h - 17h</strong></div>
-            <div class="hours__row"><span>Samedi</span><strong>9h - 12h</strong></div>
+            <!--<div class="hours__row"><span>Samedi</span><strong>9h - 12h</strong></div>-->
           </div>
 
           <p class="note">
@@ -132,7 +132,17 @@
       <div class="container">
         <h2 class="section__title">Choisissez le forfait qui vous convient</h2>
 
-        <p class="forfaits__note">Les tarifs indiqués correspondent au prix de la main‑d'œuvre.</p>
+        <div class="price-note">
+          <img
+            src="assets/img/icons/info.png"
+            alt="Information importante"
+            class="price-note__icon"
+          >
+          <p>
+            <strong>Les tarifs indiqués correspondent uniquement à la main-d’œuvre.</strong>
+          </p>
+        </div>
+
 
         <div class="cards">
           <article class="card">
@@ -225,17 +235,17 @@
           </div>
 
           <div class="panel__cta">
-            <a id="contact" class="btn btn--primary btn--wide" href="mailto:dorian.peltier@hotmail.fr?subject=Demande%20de%20devis%20-%20P%C3%A9dal%27Eure">
+            <a id="contact" class="btn btn--primary btn--wide" href="mailto:pedaleure.atelier@gmail.fr?subject=Demande%20de%20devis%20-%20P%C3%A9dal%27Eure">
               Une demande spécifique ? Cliquez ici pour me contacter
             </a>
             <p class="hint">Ou par téléphone / WhatsApp</p>
             <div class="contact-extras">
                 <div class="contact-extras__apps" role="group" aria-label="Téléphone et WhatsApp">
-                    <a class="iconbtn iconbtn--phone" href="tel:0789303017" aria-label="Appeler le 0789303017">
+                    <a class="iconbtn iconbtn--phone" href="tel:0610266727" aria-label="Appeler le 06 10 26 67 27">
                     <img src="assets/img/icons/phone.png" alt="Téléphone" />
                     </a>
 
-                    <a class="iconbtn iconbtn--wa" href="https://wa.me/33789303017" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+                    <a class="iconbtn iconbtn--wa" href="https://wa.me/33610266727" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
                     <img src="assets/img/icons/whatsapp.png" alt="WhatsApp" />
                     </a>
                 </div>
@@ -244,6 +254,56 @@
         </div>
       </div>
     </section>
+
+    <!-- Section galerie photos -->
+    <section class="section section--soft" id="galerie">
+      <div class="container">
+        <h2 class="section__title">Mes réalisations</h2>
+
+        <div class="gallery">
+          <p class="gallery__intro">
+            Quelques exemples d’interventions : avant / après, remise en état, et un aperçu de mon parcours.
+          </p>
+
+          <div class="gallery__grid">
+            <!-- Avant / Après -->
+            <figure class="gallery__card gallery__card--wide">
+              <div class="gallery__ba">
+                <div class="gallery__baItem">
+                  <img src="assets/img/avant.jpg" alt="Vélo avant réparation" loading="lazy">
+                  <span class="gallery__tag">Avant</span>
+                </div>
+                <div class="gallery__baItem">
+                  <img src="assets/img/apres.jpg" alt="Vélo après réparation" loading="lazy">
+                  <span class="gallery__tag gallery__tag--after">Après</span>
+                </div>
+              </div>
+              <figcaption class="gallery__caption">
+                Avant / Après : nettoyage + réglages + remise en état.
+              </figcaption>
+            </figure>
+
+            <!-- Photo vélo -->
+            <figure class="gallery__card">
+              <div class="gallery__imgWrap">
+                <img src="assets/img/velo.jpg" alt="Vélo en atelier" loading="lazy">
+              </div>
+              <figcaption class="gallery__caption">Un vélo en atelier</figcaption>
+            </figure>
+
+            <!-- Diplôme -->
+            <figure class="gallery__card">
+              <div class="gallery__imgWrap">
+                <img src="assets/img/diplome.jpg" alt="Diplôme" loading="lazy">
+              </div>
+              <figcaption class="gallery__caption">Diplôme / formation</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+
   </main>
 
   <!-- Footer -->
@@ -257,19 +317,19 @@
 
       <div class="footer__actions" aria-label="Raccourcis contact">
         <!-- Remplace par tes vrais liens -->
-        <a class="iconbtn" href="tel:+33789303017" aria-label="Téléphone">
+        <a class="iconbtn" href="tel:+33610266727" aria-label="Téléphone">
           <img src="assets/img/icons/phone.png" alt="Téléphone">
         </a>
-        <a class="iconbtn" href="https://wa.me/33789303017" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <a class="iconbtn" href="https://wa.me/33610266727" target="_blank" rel="noopener" aria-label="WhatsApp">
           <img src="assets/img/icons/whatsapp.png" alt="WhatsApp">
         </a>
-        <a class="iconbtn" href="mailto:dorian.peltier@hotmail.fr" aria-label="Email">
+        <a class="iconbtn" href="mailto:pedaleure.atelier@gmail.fr" aria-label="Email">
           <img src="assets/img/icons/mail.png" alt="Email">
         </a>
-        <a class="iconbtn" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+        <a class="iconbtn" href="https://www.instagram.com/pedaleure.atelier/" target="_blank" rel="noopener" aria-label="Instagram">
           <img src="assets/img/icons/instagram.png" alt="Instagram">
         </a>
-        <a class="iconbtn" href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+        <a class="iconbtn" href="https://www.facebook.com/profile.php?id=61586089590431" target="_blank" rel="noopener" aria-label="Facebook">
           <img src="assets/img/icons/facebook.png" alt="Facebook">
         </a>
       </div>
