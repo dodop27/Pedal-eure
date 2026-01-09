@@ -722,7 +722,7 @@ a{ color: inherit; text-decoration: none; }
 
 /* Cartes simples centrées */
 .gallery__card:not(.gallery__card--wide){
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
 }
 

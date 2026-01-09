@@ -29,41 +29,49 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (!btn || !pop) return;
 
+  function isOpen() {
+    return pop.classList.contains('is-open');
+  }
+
   function openPop() {
     pop.classList.add('is-open');
     pop.setAttribute('aria-hidden', 'false');
     btn.setAttribute('aria-expanded', 'true');
-    // focus premier lien
+
     const first = pop.querySelector('a');
-    if (first) first.focus();
+    if (first) first.focus({ preventScroll: true });
   }
 
-  function closePop() {
+  function closePop({ returnFocus = false } = {}) {
+    if (!isOpen()) return; // ✅ ne fait rien si déjà fermé
+
     pop.classList.remove('is-open');
     pop.setAttribute('aria-hidden', 'true');
     btn.setAttribute('aria-expanded', 'false');
-    btn.focus();
+
+    // ✅ optionnel : rendre le focus au bouton sans remonter en haut
+    if (returnFocus) btn.focus({ preventScroll: true });
   }
 
   btn.addEventListener('click', function (e) {
     e.stopPropagation();
-    const opened = pop.classList.contains('is-open');
-    if (opened) closePop(); else openPop();
+    if (isOpen()) closePop({ returnFocus: true });
+    else openPop();
   });
 
-  // fermer au clic hors du popover
+  // ✅ fermer au clic hors du popover UNIQUEMENT si ouvert
   document.addEventListener('click', function (e) {
+    if (!isOpen()) return;
     if (!pop.contains(e.target) && e.target !== btn) {
-      closePop();
+      closePop(); // pas de focus => pas de scroll
     }
   });
 
-  // Esc pour fermer
+  // ✅ Esc pour fermer (avec focus, sans scroll)
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') closePop();
+    if (e.key === 'Escape') closePop({ returnFocus: true });
   });
 
-  // empêcher fermeture quand on clique dans le pop
   pop.addEventListener('click', function (e) {
     e.stopPropagation();
   });
