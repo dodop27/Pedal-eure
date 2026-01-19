@@ -279,7 +279,7 @@ a{ color: inherit; text-decoration: none; }
 }
 
 .portrait{
-  width: 300px;
+  width: 350px;
   height: 350px;
   margin: 0 auto;
   border-radius: 999px;
@@ -669,6 +669,7 @@ a{ color: inherit; text-decoration: none; }
 /* ===== Galerie ===== */
 .gallery{
   padding: 22px 18px;
+  align-content: center;
 }
 
 .gallery__intro{
@@ -682,12 +683,14 @@ a{ color: inherit; text-decoration: none; }
   display: grid;
   grid-template-columns: 1fr;
   gap: 18px;
+  justify-items: center;
 }
 
 
 /* Cards */
 .gallery__card{
-  margin: 0;
+  margin: 2;
+  align-content: center;
   background: #faf7f3;
   border: 1px solid rgba(0,0,0,.04);
   border-radius: 16px;
@@ -699,6 +702,7 @@ a{ color: inherit; text-decoration: none; }
   width: 100%;
   aspect-ratio: 4 / 3;
   overflow: hidden;
+  align-items: center;
 }
 
 .gallery__imgWrap img{
@@ -709,7 +713,7 @@ a{ color: inherit; text-decoration: none; }
 
 .gallery__caption{
   padding: 10px 12px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   color: #1c1a17;
   text-align: center;
@@ -717,19 +721,22 @@ a{ color: inherit; text-decoration: none; }
 
 /* Avant/Après (wide) */
 .gallery__card--wide{
-  width: 100%
+  width: 90%;
+  align-items: center;
 }
 
 /* Cartes simples centrées */
 .gallery__card:not(.gallery__card--wide){
-  width: 100%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 2px;
+  align-items: center;
 }
 
 
 .gallery__ba{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .gallery__baItem{
